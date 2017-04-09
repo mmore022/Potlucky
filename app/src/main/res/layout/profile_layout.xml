@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerHorizontal="true">
+    android:layout_centerHorizontal="true"
+    android:paddingTop="15dp"
+    android:background="#d8f2ba">
 
     <ImageView
         android:layout_height="200dp"
         android:layout_width="200dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/a_legend"
+        android:background="@drawable/jiminie"
         android:id="@+id/profPic"
         android:contentDescription="@string/profile_pic_desc"/>
 
@@ -18,7 +20,43 @@
         android:layout_gravity="center_horizontal"
         android:textSize="30sp"
         android:text="@string/profile_name"
+        android:textColor="#464545"
         android:layout_margin="10dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/startParty"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#787575"
+        android:background="#d4d4d4"
+        android:text="Start a Party!"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/hostParty"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#787575"
+        android:background="#d4d4d4"
+        android:text="Host parties"
+        />
+
+    <Button
+        android:id="@+id/invitations"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#787575"
+        android:background="#d4d4d4"
+        android:layout_margin="15dp"
+        android:text="Invitations"
         />
 
 </LinearLayout>
