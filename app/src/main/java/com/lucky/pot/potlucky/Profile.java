@@ -1,5 +1,6 @@
 package com.lucky.pot.potlucky;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,11 +20,14 @@ public class Profile extends AppCompatActivity {
         switch(view.getId())
         {
             case R.id.startParty:
-                //do
+                Intent i = new Intent(this, PartyCreator.class);
+                startActivity(i);
+                overridePendingTransition(0, 0);
+                break;
             case R.id.hostParty:
-                //do
+                //Intent j = new Intent(this, )
             case R.id.invitations:
-                //do
+                //Intent k = new Intent(this, )
         }
     }
 }

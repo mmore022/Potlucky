@@ -19,6 +19,11 @@
             android:name=".Profile"
             android:label="Potlucky">
         </activity>
+
+        <activity
+            android:name=".PartyCreator"
+            android:label="Potlucky">
+        </activity>
     </application>
 
 </manifest>
